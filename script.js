@@ -28,3 +28,23 @@ function encriptar(stringEncriptado) {
   }
   return stringEncriptado;
 }
+
+function desencriptar(stringDesncriptado) {
+  let matrizCodigo = [
+    ["e", "enter"],
+    ["i", "ines"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
+  stringDesncriptado = stringDesncriptado.toLowerCase();
+
+  for (let i = 0; i < matrizCodigo.length; i++) {
+    if (stringDesncriptado.includes(matrizCodigo[i][1])) {
+      stringDesncriptado = stringDesncriptado.replaceAll(
+        matrizCodigo[i][1],
+        matrizCodigo[i][0]
+      );
+    }
+  }
+  return sstringDesncriptado;
