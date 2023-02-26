@@ -29,6 +29,12 @@ function encriptar(stringEncriptado) {
   return stringEncriptado;
 }
 
+function botonDesencriptar() {
+  const textoEncriptado = desencriptar(textArea.value);
+  mensaje.value = textoEncriptado;
+  textArea.value = "";
+}
+
 function desencriptar(stringDesencriptado) {
   let matrizCodigo = [
     ["e", "enter"],
@@ -48,11 +54,4 @@ function desencriptar(stringDesencriptado) {
     }
   }
   return stringDesencriptado;
-}
-
-function botonDesencriptar() {
-  const textoEncriptado = encriptar(textArea.value);
-  mensaje.value = textoEncriptado;
-  textArea.value = "";
-  mensaje.style.backgroundImage = "none";
 }
