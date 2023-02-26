@@ -6,3 +6,28 @@
     font-size: 32px;
     line-height: 150%;
 }
+
+.logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    border: none;
+    color: #0A6B71;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder {color: #0A6B71;}
+    .text-area:focus{
+        outline: none;
+    }
+
