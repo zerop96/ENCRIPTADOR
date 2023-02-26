@@ -1,5 +1,8 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    background: #57C8C8;
+* {
+    background: #f3f8fc;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
