@@ -29,7 +29,7 @@ function encriptar(stringEncriptado) {
   return stringEncriptado;
 }
 
-function desencriptar(stringDesncriptado) {
+function desencriptar(stringDesencriptado) {
   let matrizCodigo = [
     ["e", "enter"],
     ["i", "ines"],
@@ -37,14 +37,22 @@ function desencriptar(stringDesncriptado) {
     ["o", "ober"],
     ["u", "ufat"],
   ];
-  stringDesncriptado = stringDesncriptado.toLowerCase();
+  stringDesencriptado = stringDesencriptado.toLowerCase();
 
   for (let i = 0; i < matrizCodigo.length; i++) {
-    if (stringDesncriptado.includes(matrizCodigo[i][1])) {
-      stringDesncriptado = stringDesncriptado.replaceAll(
+    if (stringDesencriptado.includes(matrizCodigo[i][1])) {
+      stringDesencriptado = stringDesencriptado.replaceAll(
         matrizCodigo[i][1],
         matrizCodigo[i][0]
       );
     }
   }
-  return sstringDesncriptado;
+  return stringDesencriptado;
+}
+
+function botonDesencriptar() {
+  const textoEncriptado = encriptar(textArea.value);
+  mensaje.value = textoEncriptado;
+  textArea.value = "";
+  mensaje.style.backgroundImage = "none";
+}
